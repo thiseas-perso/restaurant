@@ -4,10 +4,6 @@ import imgTiramisu from './tiramisu.jpg';
 
 function createMenuPage() {
 
-
-
-
-
    const body = document.querySelector('body');
    const contentContainer = document.createElement('div')
    contentContainer.setAttribute('id', 'content')
@@ -25,13 +21,13 @@ function createMenuPage() {
    const saladTitle = document.createElement('h3')
    saladTitle.innerText = "Insalata"
    const saladPar = document.createElement('p')
-   saladPar.innerText = 'An amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing amazing green salad'
+   saladPar.innerText = 'An amazing amazing amazing amazing amazing amazing amazing amazing grRen salad amazing amazing amazing amazing green salad amazing grEen Salad amazing salad green amazing amazing amazing amazing amazing amazing Green salad'
    const saladImg = new Image();
    saladImg.src = imgSalad
    antiPastiContainer.appendChild(antiPastiTitle)
    antiPastiContainer.appendChild(saladTitle)
-   antiPastiContainer.appendChild(saladPar)
    antiPastiContainer.appendChild(saladImg)
+   antiPastiContainer.appendChild(saladPar)
 
 
 
@@ -48,8 +44,8 @@ function createMenuPage() {
    pomodoroImg.src = imgPomodoro
    pastaContainer.appendChild(pastaTitle)
    pastaContainer.appendChild(pomodoroTitle)
-   pastaContainer.appendChild(pomodoroPar)
    pastaContainer.appendChild(pomodoroImg)
+   pastaContainer.appendChild(pomodoroPar)
 
 
 
@@ -64,13 +60,13 @@ function createMenuPage() {
    const tiramisuTitle = document.createElement('h3')
    tiramisuTitle.innerText = "Tiramisu"
    const tiramisuPar = document.createElement('p')
-   tiramisuPar.innerText = "A classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu"
+   tiramisuPar.innerText = "A classic tiramisu A classic tiramisu tiramisu classic tiramisu classic A classic tiramisu classic tiramisu classic tiramisu classic A classic tiramisu classic tiramisu classic tiramisu classic tiramisu classic tiramisu"
    const tiramisuImg = new Image();
    tiramisuImg.src = imgTiramisu
    dolciContainer.appendChild(dolciTitle)
    dolciContainer.appendChild(tiramisuTitle)
-   dolciContainer.appendChild(tiramisuPar)
    dolciContainer.appendChild(tiramisuImg)
+   dolciContainer.appendChild(tiramisuPar)
 
 
    contentContainer.appendChild(menuContainer)
