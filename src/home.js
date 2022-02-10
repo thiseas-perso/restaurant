@@ -1,8 +1,10 @@
 import imgHeader from './header.jpg';
-import { cleanConent } from './clean-content';
+import { cleanContent } from './clean-content';
+
 
 function createHomePage() {
-   cleanConent();
+   cleanContent();
+
    const body = document.querySelector('body');
    const contentContainer = document.createElement('div')
    contentContainer.setAttribute('id', 'content')

@@ -1,6 +1,7 @@
 import { createHomePage } from './home.js';
 import { createMenuPage } from './menu';
 import { createFooter } from './footer';
+import { cleanContent } from './clean-content';
 
 function createNavbar() {
    const body = document.querySelector('body');
@@ -15,11 +16,19 @@ function createNavbar() {
 
    const itemOne = liArray[0]
    itemOne.innerText = 'Home'
-   itemOne.addEventListener('click', (e) => createHomePage())
+   itemOne.addEventListener('click', (e) => {
+      cleanContent()
+      createHomePage()
+      createFooter()
+   })
 
    const itemTwo = liArray[1]
    itemTwo.innerText = 'Menu'
-   itemTwo.addEventListener('click', (e) => createMenuPage())
+   itemTwo.addEventListener('click', (e) => {
+      cleanContent()
+      createMenuPage()
+      createFooter()
+   })
 
    const itemThree = liArray[2]
    itemThree.innerText = 'Contact'
