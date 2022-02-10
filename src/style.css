@@ -8,8 +8,17 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 font-family: 'Roboto', sans-serif;
-
 }
+
+#contact-container{
+flex-direction: column;
+display: flex;
+border: solid 3px #780000;
+max-width: max-content;
+align-self: center;
+margin-top: 40%;
+}
+
 h1{
    margin: 32px;
 }

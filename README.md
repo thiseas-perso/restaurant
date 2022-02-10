@@ -1,3 +1,6 @@
 # restaurant
 Practice using webpack and generating all html using only vanilla JS
-just very basic css
+Just very basic css
+
+
+https://thiseaskambas.github.io/restaurant/dist/index.html
