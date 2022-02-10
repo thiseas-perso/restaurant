@@ -1,6 +1,7 @@
-import { createHomePage } from './home.js';
+import { createHomePage } from './home';
 import { createMenuPage } from './menu';
 import { createFooter } from './footer';
+import { createContactPage } from './contact';
 import { cleanContent } from './clean-content';
 
 function createNavbar() {
@@ -32,7 +33,11 @@ function createNavbar() {
 
    const itemThree = liArray[2]
    itemThree.innerText = 'Contact'
-   itemThree.addEventListener('click', (e) => createContactPage())
+   itemThree.addEventListener('click', (e) => {
+      cleanContent()
+      createContactPage()
+      createFooter()
+   })
 
    liArray.forEach(li => ul.appendChild(li))
    navbar.appendChild(ul)

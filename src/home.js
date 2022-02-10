@@ -3,7 +3,7 @@ import { cleanContent } from './clean-content';
 
 
 function createHomePage() {
-   cleanContent();
+
 
    const body = document.querySelector('body');
    const contentContainer = document.createElement('div')
@@ -13,7 +13,7 @@ function createHomePage() {
    bannerImg.src = imgHeader
 
    const headContainer = document.createElement('div');
-   headContainer.setAttribute('id', '#header')
+   headContainer.setAttribute('id', 'header')
    headContainer.appendChild(bannerImg)
    contentContainer.appendChild(headContainer)
 

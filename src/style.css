@@ -1,0 +1,29 @@
+body{
+background-color: beige;
+margin: 0;
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+nav ul{
+   display: flex;
+   justify-content: space-evenly;
+   list-style-type: none;
+}
+
+#header img{
+   width: 100vw;
+}
+
+#content{
+   display: flex;
+   flex-direction: column;
+   
+}
+
+li:hover{
+   cursor: pointer;
+   text-decoration: underline;
+}
+
